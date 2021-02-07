@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,46 @@
     <title>Exceed</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: Helvetica;">
 
+<body>
+    <div class="header-zone"></div>
+        <div class="title" id="title"><span><img src="pics/chat.png" alt="icon" class="little-icon" id="main-logo" style="margin-right: 15px;"></span>CatChat</div>
+        <div class="description" id="description">A typical chat, but not with a cat.</div>
+        <div class="right">
+            <table style="margin-left: auto; margin-right: 0;">
+                <tr>
+                    <td>
+                        <img src="pics/sun.png" alt="moon" class="little-icon" id="little-icon">
+                    </td>
+                    <td>
+                        <div onclick="toggleDisplayMode()" class="toggle" id="toggle" name="mode">O</div>
+                    </td>
+                </tr>
+
+
+            </table>
+        </div>
+    
     <div class="mybody">
-    
+        <div id="app" class="scrollwindow"><br><br></div><br><br>
 
-    <div id="app" class="scrollwindow"><br><br></div><br><br>
-
-    <button onclick="scrollDown()" class="latest">SHOW LATEST</button><br><br>
-    <form id="post-form">
-        <label for="author" id="label-author">Author: </label>
-        <input type="text" name="author" id="author" class="input-box"/><br><br>
-        <label for="content" id="label-content">Content: </label>
-        <input type="text" name="content" id="content" class="input-box"/><br><br>
-        <input type="submit" class="button" value="send"/>
-    </form>
+        <button onclick="scrollDown()" class="latest">SHOW LATEST</button><br><br>
+        <form id="post-form">
+            <label for="author" id="label-author">Author: </label>
+            <input type="text" name="author" id="author" class="input-box" /><br><br>
+            <label for="content" id="label-content">Content: </label>
+            <input type="text" name="content" id="content" class="input-box" /><br><br>
+            <input type="submit" class="button" value="send" />
+        </form>
     </div>
-    
-    
+
+
     <br><br><br><br><br><br>
-    <div class="footer" id="footer"></div>
+    <div class="footer" id="footer">
+        <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+    </div>
 </body>
 <script src="script.js"></script>
+
 </html>
