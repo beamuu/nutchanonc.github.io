@@ -14,8 +14,8 @@ div.scrollwindow {
     border-style: none;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 4px 15px rgb(180, 180, 180);
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 20%;
+    padding-right: 20%;
     white-space: pre-line;
     text-align: left;
 }
@@ -106,3 +106,5 @@ div.footer {
     background-color: rgb(209, 209, 209);
     color: rgb(121, 121, 121);
  }
+
+ 

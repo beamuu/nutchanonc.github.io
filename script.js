@@ -2,10 +2,10 @@ console.log("Hello");
 
 const app       = document.getElementById('app');
 const form      = document.getElementById('post-form');
-const scrollWin = document.getElementById("your_div");
-
 const cache     = [];
 const myMessage = [];
+
+let darkmode = false;
 
 function GET() {
     fetch("https://backend.cpsk-club.xyz/twitter" , {
@@ -69,6 +69,41 @@ function createMyTag(author , content) {
 function scrollDown() {
     app.scrollTop = app.scrollHeight;
 }
+
+function toggleDarkMode() {
+    author = document.getElementsByClassName('author');
+    for (var i=0 ; i<author.length ; i++) {
+        author[i].style.color = 'white';
+    }
+
+    chatlayout = document.getElementsByClassName('chat-layout');
+    for (var i=0 ; i<chatlayout.length ; i++) {
+        chatlayout[i].style.boxShadow = '0 4px 10px black';
+    }
+
+    me = document.getElementsByClassName('me');
+    for (var i=0 ; i<me.length ; i++) {
+        me[i].style.color = 'white';
+    }
+
+    my = document.getElementsByClassName('my');
+    for (var i=0 ; i<my.length ; i++) {
+        my[i].style.boxShadow = '0 4px 10px black';
+    }
+
+
+    document.getElementsByTagName("BODY")[0].style.backgroundColor = 'rgb(24,24,24)';
+    document.getElementById('app').style.backgroundColor           = 'rgb(30,30,30)';
+    document.getElementById('app').style.boxShadow                 = '0 0 0 black';
+    document.getElementById('footer').style.backgroundColor        = 'black';
+    document.getElementById('label-author').style.color            = 'white';
+    document.getElementById('label-content').style.color           = 'white';
+    
+}
+function toggleLightMode() {
+
+}
+
 
 setInterval(() => {
     GET()
