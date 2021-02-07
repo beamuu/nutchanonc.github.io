@@ -10,12 +10,12 @@ div.scrollwindow {
     margin-top: 10%;
     overflow: scroll;
     max-width: 100%;
-    height: 400px;
+    height: 500px;
     border-style: none;
-    background-color: rgb(238, 238, 238);
-    box-shadow: 0 4px 10px rgb(138, 138, 138);
-    padding-left: 20%;
-    padding-right: 20%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 15px rgb(180, 180, 180);
+    padding-left: 30%;
+    padding-right: 30%;
     white-space: pre-line;
     text-align: left;
 }
@@ -30,14 +30,18 @@ div.scrollwindow {
 }
 .button {
     height: 40px;
-    width: fit-content;
+    width: 90px;
     border-style: none;
     border-radius: 10px;
-    background-color: rgb(18, 0, 184);
+    background-color: rgb(33, 194, 105);
     color: white;
+    font-weight: bold;
     font-size: 100%;
-
+    transition: 300ms ease;
 }
+.button:hover {
+    background-color: rgb(34, 151, 87);
+ }
 .chat-layout {
     min-height: 30px;
     height: auto;
@@ -50,6 +54,7 @@ div.scrollwindow {
     border-radius: 15px;
     color: white;
     background-color: rgb(119, 81, 255);
+    box-shadow: 0 8px 10px rgb(175, 175, 175);
 }
 .my {
     margin-left: auto;
@@ -65,4 +70,39 @@ div.scrollwindow {
     border-radius: 15px;
     color: white;
     background-color: rgb(33, 194, 105);
+    box-shadow: 0 8px 10px rgb(175, 175, 175);
 }
+
+.author {
+    font-weight: bold;
+    color: rgb(31, 31, 31);
+}
+
+.me {
+    font-weight: bold;
+    width: 100%;
+    text-align: right;
+    color: rgb(31, 31, 31);
+}
+
+div.footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(34, 34, 34);
+}
+
+.latest {
+    height: 40px;
+    width: 120px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+    color: rgb(197, 197, 197);
+    font-weight: bold;
+    font-size: 80%;
+    transition: 300ms ease;
+}
+.latest:hover {
+    background-color: rgb(209, 209, 209);
+    color: rgb(121, 121, 121);
+ }

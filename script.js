@@ -2,6 +2,8 @@ console.log("Hello");
 
 const app       = document.getElementById('app');
 const form      = document.getElementById('post-form');
+const scrollWin = document.getElementById("your_div");
+
 const cache     = [];
 const myMessage = [];
 
@@ -54,16 +56,21 @@ form.addEventListener("submit" , event => {
 
 
 function createTag(author , content) {
-    newElement = `<div style="height: fit-content;"><b>${author}</b></div>
+    newElement = `<div class="author">${author}</div>
     <div class="chat-layout">${content}</div><br><br>`;
     return newElement;
 }
 function createMyTag(author , content) {
-    newElement = `<div style="height: fit-content;"><b>${author}</b></div>
+    newElement = `<div class="me">${author}</div>
     <div class="my">${content}</div><br><br>`;
     return newElement;
+}
+
+function scrollDown() {
+    app.scrollTop = app.scrollHeight;
 }
 
 setInterval(() => {
     GET()
 } , 5000);
+
