@@ -170,4 +170,8 @@ function toggleDisplayMode() {
 setInterval(() => {
     GET()
 } , 5000);
+setInterval(() => {
+    if (darkmode) toggleDarkMode();
+    else toggleLightMode();
+} , 700)
 
